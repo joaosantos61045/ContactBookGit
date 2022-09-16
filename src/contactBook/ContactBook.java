@@ -94,7 +94,7 @@ public class ContactBook {
     }
 
     public Contact getContactByNumber(int number){
-        for(int i=0;i<contacts.length;i++)
+        for(int i=0;i<counter;i++)
             if(contacts[i].getPhone()==number)
                 return contacts[i];
 
@@ -102,9 +102,9 @@ public class ContactBook {
 
     }
 public boolean sameNumberContacts(){
-    for(int i=0;i<contacts.length;i++) {
+    for(int i=0;i<counter;i++) {
         Contact c = contacts[i];
-        for(int z=i+1;z<contacts.length;z++)
+        for(int z=i+1;z<counter;z++)
             if(contacts[z].getPhone()==c.getPhone())
                 return true;
     }
