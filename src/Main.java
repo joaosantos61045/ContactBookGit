@@ -144,14 +144,14 @@ public class Main {
         phone = in.nextInt(); in.nextLine();
         Contact c = cBook.getContactByNumber(phone);
         if(c!=null)
-            System.out.println(c.getName() + "; " + c.getEmail() + "; " + c.getPhone());
+            System.out.println(c.getName());
         else System.out.println("Phone number does not exist.");
     }
 
     private static void equalPhones(ContactBook cBook) {
         if(cBook.sameNumberContacts())
             System.out.println("There are contacts that share phone numbers.");
-        else System.out.println("All contacts have different phone numbers");
+        else System.out.println("All contacts have different phone numbers.");
 
     }
 }
